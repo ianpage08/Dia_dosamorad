@@ -1,0 +1,127 @@
+
+
+.star-background{
+  z-index: -1;
+  
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/imagens_static/fundoStar.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    h1{
+      color: white;
+    }
+    .carta-container{
+      position: relative;
+      z-index: 5;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+          .carta{
+          width: 40%;
+          height: 65%;
+          padding: 16px;
+          margin:auto;
+        } 
+        .carta-content{
+          animation: delayFadeIn 3s ease-in-out;
+        }
+          .carta-invisible{
+            opacity: 0;
+            animation: delayFadeIn 3s ease-in;
+            position: absolute;
+            background-color: antiquewhite;
+            width: 40%;
+            height: 40%;
+            padding: 16px;
+            z-index: 5;
+            border-radius: 8px;
+            
+          }
+          .carta-visible{
+            display: block;
+            position: absolute;
+            background-color: antiquewhite;
+            width: 40%;
+            height: 40%;
+            padding: 16px;
+            z-index: 5;
+            border-radius: 8px;
+            left: 50%;
+            animation: abrirCarta 2s ease-in-out;
+          }
+      }
+    
+}
+
+@keyframes delayFadeIn {
+  0% {
+    transform: rotate(0deg) ;
+    opacity: 1;
+    
+  }
+  30%{
+    transform: rotate(20deg) translateY(40%);
+    opacity: 1;
+  }
+  60%{
+    transform: rotate(-30deg) translateY(80%) translateX(-10%) ;
+    opacity: 1;
+  
+  }
+  100%{
+    transform: rotate(60deg) translateY(100%) translateX(40%);
+    opacity: 0;
+  }
+  
+  
+}
+@keyframes abrirCarta {
+  from {
+    transform: translatey(-50%);
+    height: 0%;
+  }
+  to {
+    transform: translatey(0);
+    height: 40%;
+
+  }
+}
+
+.animacao_text{
+  
+  
+  width: 28ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(28), blink 0.7s 5 ; ;
+}
+.animate__animated.animate__fadeInLeftBigeftBig{
+  animation-duration: 3s;
+}
+.blur{
+  backdrop-filter: blur(1px); /* aplica o efeito de desfoque  mas só funciona no IOS*/
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 28ch;
+  }
+}
+@keyframes blink {
+
+  50% {
+    border-right: 4px solid black ;
+  }
+  
+}
