@@ -1,0 +1,52 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 90px;
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  left: 0;
+  position: fixed;
+  z-index: 102;
+  background-color: #0d0c1d;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    animation: pulse 1.5s infinite;
+  }
+
+  .progress-bar {
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #555;
+    overflow: hidden;
+
+    .progress {
+      height: 100%;
+      background: linear-gradient(90deg, #ff69b4, #ff1493);
+      width: 0%;
+      animation: with 360s linear infinite;
+      transition: width 10s ease-in-out;
+    }
+  }
+}
+ @keyframes with{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+ }
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}

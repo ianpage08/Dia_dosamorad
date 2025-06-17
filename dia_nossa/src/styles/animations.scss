@@ -4,9 +4,49 @@
     animation-timeline: view() ;
     animation-range: entry 10% 40%;
 }
+.animate-nome-music{
+    animation: sroll-music 0.5s 1ms ease-in-out;
+    animation-timeline: view() ;
+    animation-range: entry 20% 60%;
+}
+.animate-text-music{
+    animation: mudarText  ease-in-out;
+    animation-duration: 10s;
+    z-index: -1;
+}
+.frase {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: aparecer 50s infinite ;
+}
+
+    .frase1 { animation-delay: 0s; }
+    .frase2 { animation-delay: 12.5s; }
+    .frase3 { animation-delay: 25s; }
+    .frase4 { animation-delay: 38.5s; }
 
 
+@keyframes aparecer {
+    0%   { opacity: 0; transform: translateY(20px); }
+    5%   { opacity: 1; transform: translateY(0); }
+    20%  {opacity: 0.6;}
+    25%  { opacity: 0.5; }
+    29%  { opacity: 0.2; }
+    33%  { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 0; }
+}
+@keyframes sroll-music {
+    from{
+        opacity: 0;
+        translate: -100vw 0;
 
+    }
+    to {
+        opacity: 1;
+        translate: 0;
+    }
+}
 
 
 @keyframes sroll_galeria{

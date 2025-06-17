@@ -1,10 +1,8 @@
-:root{
-    --cor_principal:#0d0c1d; /*azul noite: Cor principal de fundo, simula o céu noturno*/
-    --cor_secundaria:#3a0ca3; /*roxo: Destaques, títulos e efeitos de contraste*/
-    --cor_terciaria:#7209b7; /*lilas: Botões, ícones românticos, corações, elementos*/
-    --cor_texto:#f2f2f2; /*branco suave: Texto principal, detalhes, estrelas claras*/
-    --cor_sombra:#5f0f40; 
-    --cor_brilho:	#ffd700; /*dourado: brilho de estrelas*/
 
+    $cor_principal:#0d0c1d; /*azul noite: Cor principal de fundo, simula o céu noturno*/
+    $cor_secundaria:#3a0ca3; /*roxo: Destaques, títulos e efeitos de contraste*/
+    $cor_terciaria:#7209b7; /*lilas: Botões, ícones românticos, corações, elementos*/
+    $cor_texto:#f2f2f2; /*branco suave: Texto principal, detalhes, estrelas claras*/
+    $cor_sombra:#5f0f40; 
+    $cor_brilho:	#ffd700; /*dourado: brilho de estrelas*/
 
-}

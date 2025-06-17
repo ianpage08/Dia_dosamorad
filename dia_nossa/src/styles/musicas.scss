@@ -1,0 +1,32 @@
+
+
+.music-entry{
+
+    background-color: #0d0c1d;
+    color: #f2f2f2;
+    .pad{
+        padding: 16px 16px 50px 16px;
+        iframe{
+            padding-top: 40px;
+        }
+    }
+    .texto-musica{
+    width: 80%;
+    padding: 50px;
+    
+    .container-text-music{
+        width: 100%;
+        position: relative;
+        
+            .fundo-text-music{
+                height: 150px;
+                width: 100%;
+                background-color: #0d0c1d;
+                top: 0%;
+                left: 0%;
+                position: absolute;
+    }
+    }
+    
+}
+}
