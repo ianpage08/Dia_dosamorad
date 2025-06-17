@@ -3,35 +3,45 @@ import { useState } from 'react'; // Importa o useState para gerenciar estados n
 // Lista de perguntas do quiz
 const perguntas = [
   {
-    pergunta: 'Qual meu filme favorito?', // Texto da pergunta
-    resposta: ['Carros', 'Filme 2', 'Filme 3', 'Filme 4'], // Opções de resposta
-    respostaCerta: 'Carros', // Resposta correta (uma string)
+    pergunta: 'Qual é meu prato favorito?', // Texto da pergunta
+    resposta: ['Batata Frita', 'Hamburguer', 'Pizza', 'Açai','Qualquer coisa que seja boa'], // Opções de resposta
+    respostaCerta: 'Qualquer coisa que seja boa', // Resposta correta (uma string)
+  },
+  {
+    pergunta: 'O que eu gosto de fazer no meu tempo livre?',
+    resposta: ['Jogar', 'Ler', 'Treinar', 'Assistir'],
+    respostaCerta: 'Jogar',
+  },
+  {
+    pergunta: 'Qual é o jogo que mais gosto??',
+    resposta: ['Resident Evil 4', 'Hollow Knigth', 'Hogwarts Legacy', 'God Of War'],
+    respostaCerta: 'Resident Evil 4',
+  },
+  {
+    pergunta: 'Qual atividade eu mais gosto de fazer com você?',
+    resposta: ['Correr', 'Musculação', 'Calistenia', 'Andar'],
+    respostaCerta: 'Musculação',
   },
   {
     pergunta: 'Qual minha cor favorita?',
-    resposta: ['Azul', 'Vermelho', 'Rosa', 'cor12'],
-    respostaCerta: 'cor12',
+    resposta: ['Azul', 'Vermelho', 'Rosa', 'Preto'],
+    respostaCerta: 'Preto',
   },
   {
-    pergunta: 'Qual minha cor favorita?',
-    resposta: ['Azul', 'Vermelho', 'Rosa', 'cor12'],
-    respostaCerta: 'cor12',
+    pergunta: 'Qual parte do seu corpo você acha que eu mais gosto?',
+    resposta: ['Bunda', 'Peito', 'Sorriso', 'Pernas', 'Tudo'],
+    respostaCerta: 'Tudo',
   },
   {
-    pergunta: 'Qual minha cor favorita?',
-    resposta: ['Azul', 'Vermelho', 'Rosa', 'cor12'],
-    respostaCerta: 'cor12',
+    pergunta: 'Se eu fosse uma comida, eu seria:',
+    resposta: ['Cuscuz com ovo: simples e maravilhoso', 'Sushi: requintado e fresco', 'Pizza: todo mundo gosta', 'Pimenta: só aguenta quem é forte'],
+    respostaCerta: 'Pimenta: só aguenta quem é forte',
   },
   {
-    pergunta: 'Qual minha cor favorita?',
-    resposta: ['Azul', 'Vermelho', 'Rosa', 'cor12'],
-    respostaCerta: 'cor12',
-  },
-  {
-    pergunta: 'Qual minha cor favorita?',
-    resposta: ['Azul', 'Vermelho', 'Rosa', 'cor12'],
-    respostaCerta: 'cor12',
-  },
+    pergunta: 'Qual é minha frase clássica?',
+    resposta: ['Tô com fome!', 'Depois eu vejo isso…', 'Me lembrei de uma coisa nada a ver…', 'Só mais 5 minutinhos'],
+    respostaCerta: 'Tô com fome!',
+  }
 ];
 
 // Componente principal do Quiz
@@ -66,7 +76,7 @@ export default function Quiz() {
             <h2>Você acertou {acertos} de {perguntas.length}</h2>
             <p>
               {acertos === perguntas.length
-                ? 'Parabéns, meu amor! Você me conhece muito bem 💖'
+                ? 'Parabéns, meu amor! Você Ganhou 10 Reais por me conhecer 💖'
                 : 'Poxa vida! Não acertou tudo... vai ter que me dar um beijo de consolo! 😘'}
             </p>
         </div>

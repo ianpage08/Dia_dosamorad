@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import carta from '../assets/imagens_static/carta.png';
-import icon from  '../assets/icons/coracao.png'
+import icon from  '../assets/icons/coracao.svg'
 
 export default function StarBackground() {
 
@@ -22,7 +22,7 @@ export default function StarBackground() {
             
               <div className="animate__fadeInLeftBig animate__animated d-flex justify-content-center align-items-center flex-column carta-container">
                 <img src={carta} alt="carta" className="img-fluid carta-img carta " />
-                <button onClick={toglleClick} className='btn-carta' > <img src={icon} alt="" /> </button>
+                <button onClick={toglleClick} className='btn-carta' > <img src={icon} alt=""  /> </button>
                 <div className={ ` ${cartaVisible ? 'carta-visible' :'carta-invisible'} `} >
                   <div className='carta-content'>
                     <h2 className="text-center ">Você é a estrela mais brilhante do meu universo! 🌟</h2>

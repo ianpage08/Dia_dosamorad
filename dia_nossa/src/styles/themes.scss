@@ -28,10 +28,14 @@
           left: 13%;
         } 
         .btn-carta{
+          background-color:transparent;
           border: none;
           position: absolute;
           animation: pulse 1s ease-in-out infinite;
-          left: 30%;
+          left: 29.2%;
+          img{
+            width: 105px;
+          }
         }
           .carta-invisible{
             opacity: 0;
